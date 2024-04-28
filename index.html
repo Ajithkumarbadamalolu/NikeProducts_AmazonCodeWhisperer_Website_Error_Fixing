@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nike</title>
+<style>
+body {
+background-color: lightblue;
+}
+
+header {
+background-color: darkblue;
+color: white;
+padding: 20px;
+}
+
+nav {
+float: left;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 14px 16px;
+}
+
+nav a:hover {
+background-color: darkgray;
+}
+
+#logo {
+float: left;
+}
+
+#logo img {
+width: 100px;
+}
+
+section {
+float: left;
+padding: 20px;
+width: 70%;
+}
+
+aside {
+float: right;
+padding: 20px;
+width: 30%;
+}
+
+footer {
+background-color: darkblue;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div id="logo"><img src="nike-logo.png" alt="Nike Logo"></div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+</nav>
+</header>
+
+<div class="clearfix">
+
+<section>
+<h1>Nike Shoes</h1>
+<img src="nike-shoes.jpg" alt="Nike shoes image">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+</section>
+
+<aside>
+<h2>Newsletter</h2>
+<p>Sign up for our newsletter:</p>
+<form>
+<label for="email">Email:</label>
+<input id="email" type="email" placeholder="Email">
+<button type="submit">Submit</button>
+</form>
+</aside>
+
+</div>
+
+<footer>
+<p>Copyright 2021, Nike</p>
+</footer>
+
+</body>
+</html>
